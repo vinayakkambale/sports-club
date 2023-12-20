@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>development plan</title>
+    <link rel="shortcut icon" href="assets/image/logo/sc logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/21e0d1b7eb.js" crossorigin="anonymous"></script>
+
+    <style>
+       *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.header{
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(assets/image/bg/development\ plan.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+    float: left;
+    margin-top: 120px;
+}
+
+.text-box h3{
+    font-size: 24px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+
+.nav-links .fa-solid{
+    /* padding: 0 15px; */
+    margin-right: 8px;
+
+}
+
+
+.nav-links .fa-regular{
+    /* padding: 0 15px; */
+    margin-right: 8px;
+
+}
+
+/*for sub nav bar*/
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(81, 120, 135);
+    margin-top: 9px;
+    margin-left: -15px;
+
+}
+
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li a:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+body{
+    background: #2e364a;
+}
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /* background: rgba(0,0,0,0.3); */
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container :nth-child(1){
+    animation-delay: 0s;
+}
+
+.container :nth-child(2){
+    animation-delay: 1s;
+}
+
+.container :nth-child(3){
+    animation-delay: 2s;
+}
+
+.container :nth-child(4){
+    animation-delay: 3s;
+}
+
+.textbox{
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+
+}
+.left-container{
+    left: 0;
+
+}
+.right-container{
+    left: 50%;
+}
+
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+.right-container img{
+    left: -20px;
+
+}
+
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    10%{
+        height: 100%;
+    }
+}
+.textbox h2{
+    font-weight: 600;
+}
+.textbox small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+}
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+/*---footer----*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: white;
+    color: black;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.footer p{
+    font-size: 18px;
+}
+
+#f{
+    color: #f44336;
+    margin: 0 18px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="assets/image/logo/sc logo.png" alt=""></a>
+            <div class="nav-links">
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="index.html" class="active">HOME</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="jsc.html"> JAYESH SPORTS CLUB</a></li>
+                                <li><a href="vision.html"> VISION</a></li>
+                                <li><a href="fitness.html"> FITNESS</a></li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li><i class="fa-solid fa-medal"></i><a href="">THE CLUB</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="developmentplan.html"> THE DEVELOPMENT PLAN</a></li>
+                                <li><a href="sports2.html"> INDOOR GAMES</a></li>
+                                
+
+                            </ul>
+
+                        </div></li>
+                    <li><i class="fa-regular fa-futbol"></i><a href="sports2.html">SPORTS</a></li>
+                    <li><i class="fa-solid fa-person"></i><a href="mem2.html">MEMBERSHIP</a></li>
+                    <li><i class="fa-solid fa-address-card"></i><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            
+        </nav>
+        <div class="text-box">
+            <h1>TOTAL DEVELOPMENT PLAN</h1>
+            <!-- <h3>"Elevate Your Game, Unleash Your Passion: [Jayesh Sports Club] - Where Champions Rise!"</h3> -->
+            <!-- <p>
+                "Welcome to [Jayesh Sports Club], where sportsmanship meets excellence. Dive into a world of passion, dedication, and camaraderie. Our club is a dynamic <br> community, fostering growth, teamwork, and the pursuit of athletic greatness. Join us on this exhilarating journey!"</p> -->
+                <!-- <a href="" class="hero-btn">visit us to know more</a> -->
+
+        </div>
+
+    </section>
+
+    <div class="timeline">
+        <div class="container left-container">
+            <img src="assets/image/icons/sports.png" alt="">
+            <div class="textbox">
+                <h2>
+                    SPORTS TECHNICS
+                </h2>
+                <p>
+                    
+
+                    "Sport techniques are crucial for performance excellence. Mastering skills and strategies enhances efficiency, reduces injury risk, and maximizes competitive advantage. Precision in sport technics elevates athletes to their full potential."
+                </p>
+                <span class="left-container-arrow"></span>
+
+            </div>
+
+        </div>
+
+        <div class="container right-container">
+            <img src="assets/image/icons/mental strenth.png" alt="">
+            <div class="textbox">
+                <h2>
+                    MENTAL STRENGTH
+                </h2>
+                <p>
+                    
+                    "Mental strength is key to resilience, effective problem-solving, and emotional well-being. It empowers individuals to navigate challenges, build positive relationships, and maintain focus in pursuit of personal and professional goals.""
+                </p>
+                <span class="right-container-arrow"></span>
+
+            </div>
+
+        </div>
+
+        <div class="container left-container">
+            <img src="assets/image/icons/physical fitness.png" alt="">
+            <div class="textbox">
+                <h2>
+                    PHYSICAL FITNESS
+                </h2>
+                <p>
+                    
+
+                    "Physical fitness is vital for a healthy life. It enhances cardiovascular health, boosts mood, and reduces the risk of chronic diseases. Regular exercise contributes to longevity and overall well-being."</p>
+                    <span class="left-container-arrow"></span>
+
+            </div>
+
+        </div>
+
+        <div class="container right-container">
+            <img src="assets/image/icons/nutrition.png" alt="">
+            <div class="textbox">
+                <h2>
+                    NUTRITION
+                </h2>
+                <p>
+                    
+
+                    "Nutrition is fundamental for optimal health, providing essential nutrients for energy, growth, and disease prevention. It supports physical and mental well-being, contributing to a balanced and fulfilling lifestyle."</p>
+                    <span class="right-container-arrow"></span>
+
+
+
+
+
+
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!---foooter-->
+
+    <footer class="footer">
+        
+        <h4>About Us</h4>
+        <p>"Step into a world of sports excellence and community at Jayesh Sports Club. Embrace the journey, celebrate victories, and grow with us. Join a passionate community dedicated to fostering skill, camaraderie, and the joy of the game. Explore more with Jayesh Sports Club."</p>
+     
+    
+        <div class="icons">
+         <div id="f">
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-square-instagram"></i>
+         <i class="fa-brands fa-google"></i>
+         <i class="fa-brands fa-twitter"></i>
+         <i class="fa-brands fa-youtube"></i>
+     </div>
+    
+        </div>
+        <p>Made by Vinayak Kambale</p>
+        <p>Copyright @2023</p>
+     </footer>
+    
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <script src="https://kit.fontawesome.com/21e0d1b7eb.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/image/logo/sc logo.png" type="image/x-icon">
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        .content-wrap{
+            width: 80%;
+            height: auto;
+            margin: auto;
+            display: flex;
+            padding-top: 50px;
+            padding-left: 22.5%;
+
+        }
+        .content-in{
+            padding: 40px 30px;
+
+        }
+        .content-in:nth-child(1){
+            flex: 30%;
+            background: url(assets/image/bg/pexels-pixabay-46798.jpg);
+            color: #fff;
+
+        }
+        .content-in:nth-child(2){
+            flex: 45%;
+            background: #c31432;
+            
+        }
+        .content-in:nth-child(3){
+            flex: 25%;
+            padding: 0;
+            
+        }
+        .content-in h1{
+            font-size: 24px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        .content-in h2{
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        .content-in h2 i{
+            font-size: 16px;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            background: #f5f5f5;
+            color: #000;
+            border-radius: 50px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .content-in p{
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .content-in form{
+            width: 100%;
+            height: auto;
+        }
+        .content-in-input{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            outline: none;
+            padding-left: 5px;
+            background: transparent;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 300;
+            font-family: sans-serif;
+        }
+        .content-in-input::placeholder{
+            color: #fff;
+        }
+
+        .content-in-textarea{
+            width: 100%;
+            height: 140px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+            outline: none;
+            padding-left: 5px;
+            background: transparent;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 300;
+            font-family: sans-serif;
+        }
+        .content-in-textarea::placeholder{
+            color: #fff;
+        }
+        .content-in-btn{
+            width: 100%;
+            height: 40px;
+            border: 1px solid #fff;
+            outline: none;
+            padding-left: 5px;
+            background: transparent;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 300;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.header{
+    min-height: 40vh;
+    width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(assets/image/bg/pexels-slaid-waggoner-1580234.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box h3{
+    font-size: 24px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+
+.nav-links .fa-solid{
+    /* padding: 0 15px; */
+    margin-right: 8px;
+
+}
+
+
+.nav-links .fa-regular{
+    /* padding: 0 15px; */
+    margin-right: 8px;
+
+}
+
+/*for sub nav bar*/
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(81, 120, 135);
+    margin-top: 9px;
+    margin-left: -15px;
+
+}
+
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li a:hover{
+    color: #fff;
+}
+
+/*---footer----*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: white;
+    color: black;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.footer p{
+    font-size: 18px;
+}
+
+#f{
+    color: #f44336;
+    margin: 0 18px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+            .content-wrap {
+                flex-direction: column;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .content-in:nth-child(1),
+            .content-in:nth-child(2),
+            .content-in:nth-child(3) {
+                flex: 100%;
+            }
+
+            .header {
+                min-height: 30vh; /* Adjust the height for smaller screens */
+            }
+
+            .text-box h1 {
+                font-size: 42px; /* Adjust the font size for smaller screens */
+            }
+
+            /* Add more responsive styles as needed */
+        }
+
+        @media screen and (max-width: 768px) {
+            .content-in {
+                padding: 20px 15px;
+            }
+
+            .content-wrap {
+                padding-top: 20px;
+            }
+
+            .nav-links {
+                text-align: center;
+            }
+
+            .nav-links ul li {
+                display: block;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .nav-links ul li::after {
+                width: 0;
+            }
+
+            .text-box h1 {
+                font-size: 32px;
+            }
+
+            /* Add more responsive styles as needed */
+        }
+
+        @media screen and (max-width: 600px) {
+            /* Add specific styles for smaller screens */
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="assets/image/logo/sc logo.png" alt=""></a>
+            <div class="nav-links">
+               
+                
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="index.html" class="active">HOME</a>
+                        
+                    </li>
+                    
+
+            </div>
+           
+            
+        </nav>
+        <div class="text-box">
+            <h1>Jayesh Sports Club</h1>
+           
+
+        </div>
+
+    </section>
+    <div class="content-wrap">
+        <div class="content-in">
+            <h1>INFO</h1>
+            <H2>PHONE</H2>
+            <P>+91 9075714537</P>
+            <H2>EMAIL</H2>
+            <P>kvinayak0512@gmail.com</P>
+            <H2>ADDRESS</H2>
+            <P>at.post kharadi dit.sub.dist-pune 
+                <br> city-vista B wing 6th floor
+            </P>
+        </div>
+        <div class="content-in">
+            <h1>SEND A MESSAGE</h1>
+            <form action="">
+                <input type="text" placeholder="FULL NAME" class="content-in-input">
+                <input type="text" placeholder="EMAIL" class="content-in-input">
+                <input type="text" placeholder="SUBJECT" class="content-in-input">
+                <textarea placeholder="message" class="content-in-textarea"></textarea>
+                <input type="submit" value="submit" class="content-in-btn">
+            </form>
+        </div>
+        <div class="content-in"></div>
+
+    </div>
+
+      <!---foooter-->
+
+      <footer class="footer">
+        
+        <h4>About Us</h4>
+        <p>"Step into a world of sports excellence and community at Jayesh Sports Club. Embrace the journey, celebrate victories, and grow with us. Join a passionate community dedicated to fostering skill, camaraderie, and the joy of the game. Explore more with Jayesh Sports Club."</p>
+     
+    
+        <div class="icons">
+         <div id="f">
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-square-instagram"></i>
+         <i class="fa-brands fa-google"></i>
+         <i class="fa-brands fa-twitter"></i>
+         <i class="fa-brands fa-youtube"></i>
+     </div>
+    
+        </div>
+        <p>Made by Vinayak Kambale</p>
+        <p>Copyright @2023</p>
+     </footer>
+    
+</body>
+</html>

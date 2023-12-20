@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="assets/image/logo/sc logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/21e0d1b7eb.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-size: 14px;
+            background-color: rgb(60, 165, 225);
+        }
+
+        .container{
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .contact-box{
+            background: #fff;
+            display: flex;
+        }
+        .Contactleft{
+            flex-basis: 60%;
+            padding: 40px 60px;
+        }
+        .Contactright{
+            flex-basis: 40%;
+            padding: 40px;
+            background: #1c00b5;
+            color: #fff;
+        }
+        h1{
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .container p{
+            margin-bottom: 40px;
+            text-align: center;
+
+        }
+
+        .input-row{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+        }
+
+        .input-row .input-group{
+            flex-basis: 45%;
+
+        }
+
+        input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            padding-bottom: 5px;
+        }
+        textarea{
+            width: 100%;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        label{
+            margin-bottom: 6px;
+            display: block;
+            color: #1c00b5;
+        }
+        button{
+            background: #286abb;
+            width: 15%;
+            border: none;
+            outline: none;
+            color: #fff;
+            height: 35px;
+            border-radius: 30px;
+            margin-top: 20px;
+            box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+            cursor: pointer;
+
+        }
+        .Contactleft h3{
+            color: #286abb;
+            font-family: 600;
+            margin-bottom: 30px;
+        }
+        .Contactright h3{
+            font-family: 600;
+            margin-bottom: 30px;
+        }
+        tr td:first-child{
+            padding-right: 20px;
+        }
+        tr td{
+            padding-top: 20px;
+        }
+
+        /*navbar*/
+
+
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.header{
+    min-height: 60vh;
+    width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(assets/image/bg/cont.us.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box h3{
+    font-size: 24px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+
+}
+
+.nav-links .fa-solid{
+    /* padding: 0 15px; */
+    margin-right: 8px;
+
+}
+
+
+.nav-links .fa-regular{
+    /* padding: 0 15px; */
+    margin-right: 8px;
+
+}
+
+/*for sub nav bar*/
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(81, 120, 135);
+    margin-top: 9px;
+    margin-left: -15px;
+
+}
+
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li a:hover{
+    color: #fff;
+}
+
+/*---footer----*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: white;
+    color: black;
+
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.footer p{
+    font-size: 18px;
+}
+
+#f{
+    color: #f44336;
+    margin: 0 18px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+            .contact-box {
+                flex-direction: column;
+            }
+
+            .Contactleft,
+            .Contactright {
+                flex-basis: 100%;
+                padding: 20px;
+            }
+
+            .nav-links {
+                text-align: center;
+            }
+
+            .nav-links ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links ul li {
+                display: block;
+                text-align: center;
+            }
+
+            .text-box {
+                top: 40%;
+            }
+
+            .hero-btn {
+                display: block;
+                margin: 10px auto;
+            }
+        }
+
+
+       
+    </style>
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="assets/image/logo/sc logo.png" alt=""></a>
+            <div class="nav-links">
+                <!-- <i class="fa-solid fa-xmark"></i> -->
+                
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="index.html" class="active">HOME</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="jsc.html"> JAYESH SPORTS CLUB</a></li>
+                                <li><a href="vision.html"> VISION</a></li>
+                                <li><a href="fitness.html"> FITNESS</a></li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li><i class="fa-solid fa-medal"></i><a href="">THE CLUB</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="developmentplan.html"> THE DEVELOPMENT PLAN</a></li>
+                                <li><a href="sports2.html"> INDOOR GAMES</a></li>
+                                
+
+                            </ul>
+
+                        </div></li>
+                    <li><i class="fa-regular fa-futbol"></i><a href="sports2.html">SPORTS</a></li>
+                    <li><i class="fa-solid fa-person"></i><a href="mem2.html">MEMBERSHIP</a></li>
+                    <li><i class="fa-solid fa-address-card"></i><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            
+        </nav>
+        <div class="text-box">
+            <h1>CONTACT WITH US</h1>
+            
+
+        </div>
+
+    </section>
+
+    <div class="container">
+        <h1>Contact With Us</h1>
+        <p>"We're here to assist you. Please feel free to reach out with any questions, feedback, or inquiries."</p>
+        <div class="contact-box">
+            <div class="Contactleft">
+                <h3>Sent your request</h3>
+                <form onsubmit="sendEmail(); reset();return false;">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name:</label>
+                            <input type="text" placeholder="Name">
+
+                        </div>
+
+                        <div class="input-group">
+                            <label>Phone:</label>
+                            <input type="text" placeholder="+91 000 000 0000" >
+
+                        </div>
+
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email:</label>
+                            <input type="text" placeholder="xyz@gmail.com">
+
+                        </div>
+
+                        <div class="input-group">
+                            <label>Interested in:</label>
+                            <input type="text" placeholder="Sport name" >
+
+                        </div>
+
+                    </div>
+                    <label>Massage</label>
+                    <textarea rows="5" placeholder="Type your massage"></textarea>
+                    <button type="submit">SEND</button>
+
+
+                </form>
+            </div>
+            <div class="Contactright">
+                <h3>Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>kvinayak0512@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone</td>
+                        <td>+91 907 571 4537</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address</td>
+                        <td>City Vista B-Wing kharadi baypass wagholi road, pune, Maharashtra, [411014]</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+       
+
+    </div>
+
+    <footer class="footer">
+        
+        <h4>About Us</h4>
+        <p>"Step into a world of sports excellence and community at Jayesh Sports Club. Embrace the journey, celebrate victories, and grow with us. Join a passionate community dedicated to fostering skill, camaraderie, and the joy of the game. Explore more with Jayesh Sports Club."</p>
+     
+    
+        <div class="icons">
+         <div id="f">
+         <i class="fa-brands fa-facebook"></i>
+         <i class="fa-brands fa-square-instagram"></i>
+         <i class="fa-brands fa-google"></i>
+         <i class="fa-brands fa-twitter"></i>
+         <i class="fa-brands fa-youtube"></i>
+     </div>
+    
+        </div>
+        <p>Made by Vinayak Kambale</p>
+        <p>Copyright @2023</p>
+     </footer>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken:"1688d0e9-54ed-4179-94f3-ffdba9fc26be",
+    Host : "smtp.elasticemail.com",
+    Username : "kvinayak0512@gmail.com",
+    Password : "6526BA2FE0234619F947E9C3E8A470D7AB72",
+    To : 'kvinayak0512@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "contact form & enquiry",
+    Body : "name: " + document.getElementById("name").value
+    + "<br> email: " + document.getElementById("email").value
+    + "<br> phone no: " + document.getElementById("phone").value
+    + "<br> message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Succesfully")
+);
+        }
+    </script>
+    
+</body>
+</html>
